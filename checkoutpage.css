@@ -1,0 +1,126 @@
+
+.upside-text{
+    justify-content: space-around;
+    background-color: #005C84;
+    color: #fff;
+    height: 60px;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    
+    border-radius: 20px 20px 0px 0px;
+}
+.upside-text2{
+    
+    background-color: #005C84;
+    color: #fff;
+    height: 60px;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    
+    border-radius: 20px 20px 0px 0px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 2%;
+    margin-bottom: 20%;
+}
+
+.section-container {
+    width: 48%;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #747474;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input:focus {
+    border-color: #007bff; /* Change to the color you want */
+    outline: none; /* Removes the default outline */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Optional: adds a shadow effect */
+}
+
+.button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0069d9;
+}
+
+.right .upside-text2 div{
+    padding-left: 40px;
+}
+.cart-details {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-details th,
+.cart-details td {
+    padding: 10px;
+    text-align: left;
+}
+
+.header-row {
+    border-bottom: 2px dashed #aaa;
+}
+
+.border-bottom {
+    border-bottom: 2px dashed #aaa;
+}
+
+.subtotal-row {
+    border-bottom: 2px dashed #aaa;
+}
+
+.shipping-row {
+    border-bottom: 2px dashed #aaa;
+}
+
+.total-row {
+    border-bottom: none;
+}
+
+.cart-title {
+
+   display: flex;
+   margin-left: 20px;
+   
+    
+   
+}
+
+.last-input-page2{
+    display: flex;
+    gap: 20px;
+}

@@ -1,0 +1,116 @@
+/* Footer */
+.footer {
+    padding: 20px;
+background-image: url(/slider/footer.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 10px;
+}
+.footer-heading1{
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+}
+.footer-heading {
+    font-size: 22spx;
+    /* margin-bottom: px; */
+    margin-top: 40px;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.footer-text {
+    border-top: 0px;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.footer-subheading {
+    font-size: 22px;
+    margin-top: 80px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.footer-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-button {
+    padding: 22px 70px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    background-size: cover; /* Ensure the background image covers the button */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+}
+
+.btn1 {
+    background-image: url('slider/button1.png'); /* Replace with your image URL */
+}
+
+.btn2 {
+    background-image: url('slider/button2.png'); /* Replace with your image URL */
+}
+
+.footer-hr {
+    margin: 0px 150px 0px 0px;
+    border: 0;
+    border-top: 2px solid #fdfdfd;
+}
+.footer-hr2 {
+    margin: 0px 250px 0px 0px;
+    border: 0;
+    border-top: 2px solid #fdfdfd;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fcfcfc;
+}
+
+.footer-links a:hover {
+    text-decoration: underline #057db1 ;
+}
+
+.footer-bottom-hr {
+    margin: 20px 50px;
+    border: 0;
+    border-top: 1px solid #057db1;
+}
+
+.footer-bottom-text {
+    text-align: center;
+    color: #FFFFFF;
+}

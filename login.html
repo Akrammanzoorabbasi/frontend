@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Login Form Design | CodeLab</title>
+    <link rel="stylesheet" href="./style/loginStyle.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="title">
+        Login Form
+    </div>
+    <!-- Error message section -->
+    <div id="error-message">
+        <!-- This section will display errors if redirected from login.php with error params -->
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            const error = urlParams.get('error');
+            let errorMessage = '';
+
+            switch (error) {
+                case 'empty_fields':
+                    errorMessage = 'Please fill in all required fields.';
+                    break;
+                case 'invalid_credentials':
+                    errorMessage = 'Invalid email or password.';
+                    break;
+                default:
+                    errorMessage = '';
+            }
+
+            if (errorMessage) {
+                document.write(`<p class='error-message'>${errorMessage}</p>`);
+            }
+        </script>
+    </div>
+    <form action="./php/login.php" method="POST">
+        <div class="field">
+            <input type="text" name="email" required>
+            <label>Email Address</label>
+        </div>
+        <div class="field">
+            <input type="password" name="password" required>
+            <label>Password</label>
+        </div>
+        <div class="content">
+            <div class="checkbox">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+            <div class="pass-link">
+                <a href="#">Forgot password?</a>
+            </div>
+        </div>
+        <div class="field">
+            <input type="submit" value="Login">
+        </div>
+        <div class="signup-link">
+            Not a member? <a href="#">Signup now</a>
+        </div>
+    </form>
+</div>
+</body>
+</html>

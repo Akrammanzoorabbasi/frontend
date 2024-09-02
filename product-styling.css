@@ -1,0 +1,179 @@
+.main-div{
+    margin: 50px;
+}
+.main-heading{
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 35px;
+}
+.product-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.product-item {
+    text-align: center;
+    width: 24%;
+    background-color: #B2E6FD;
+    border-radius: 15px;
+}
+
+.product-item h2{
+    font-size: 22px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.product-item img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    display: block;
+    margin: 20px auto;
+}
+
+.left-panel {
+    width: 315px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 40px;
+    padding: 10px 22px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding-bottom: 17%;
+}
+.left-panel h2{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.rating .stars {
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.rating .stars span {
+    color: #FDA02F;
+    font-size: 32px;
+
+}
+
+.price-range p, .price-buttons button, .left-panel label {
+    margin: 10px 0;
+}
+.left-panel label{
+    display: flex;
+    margin-top: 0;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.price-range{
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.price-buttons button {
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.left-panel h3{
+    font-family: sans-serif;
+}
+
+.right-panel {
+    margin-left: 400px; /* Adjust according to left panel width */
+    margin-top: 70px;
+}
+
+.right-panel h2{
+    font-family: sans-serif;
+}
+
+.right-panel .short-des{
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.right-panel .center-heading{
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+
+.products .product-card {
+    width: 270px;
+    height: auto;
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product-card h3, .product-card p {
+    margin: 10px 0;
+}
+
+.product-card h3{
+    font-family: sans-serif;
+}
+
+.product-card p{
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #005C84;
+}
+
+.right-panel .center-heading{
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+    font-family: sans-serif;
+    border: 1px solid grey;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+button:hover {
+   border-color: #007bff;
+}
+
+.right-panel hr{
+    margin: 10px 70px;
+}
+
+.right-panel button{
+    border-radius: 30px;
+    background-color: #005C84;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 auto; /* Center the button */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+

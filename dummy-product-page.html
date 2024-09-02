@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dummy-product-page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dummy-product-page.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+
+    <div id="header-placeholder"></div>
+
+    <script>
+        // Include the header.html content
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+    </script>
+
+    
+    <!-- Rest of the page -->
+    <div class="product-page">
+        <div class="left-section">
+            <div class="small-sections">
+                <img src="listingimg/1.png" class="small-box">
+                <img src="listingimg/2.png" class="small-box">
+                <img src="listingimg/3.png" class="small-box">
+
+            </div>
+            <div class="large-box">
+                <img src="listingimg/main.png" alt="">
+            </div>
+        </div>
+
+        <div class="right-section">
+            <!-- New Section: Heading, Price, Stars, Reviews, and Heart -->
+            <div class="product-header">
+                <h1>Hi-Res Audio Over Ear Wireless Headset</h1>
+                <div class="price-stars">
+                    <span class="price">$54.98</span>
+                    <span class="divider">|</span>
+                    <span class="stars">★★★★★</span>
+                    <span class="reviews">(32 reviews)</span>
+                    <span class="heart-icon">♡</span>
+                </div>
+            </div>
+            <hr class="price-divider">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipi scing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet dolore magn. Lorem ipsum dolor sit amet, consectetuer adipi scing elit, sed diam nonummy nibh
+                euismod tincidunt ut laoreet dolore magn. </p>
+            <ul>
+                <li>Lorem ipsum dolor sit amet, adipi scing elit</li>
+                <li>Lorem ipsum dolor sit amet, consectetuer adipi scing elit</li>
+                <li>Lorem ipsum dolor sit amet, consectetuer adipi </li>
+            </ul>
+
+            <!-- Quantity selector and Add to Cart button on the same line -->
+            <div class="button-group">
+                <div class="quantity-selector">
+                    <button id="decrement">-</button>
+                    <span id="quantity">1</span>
+                    <button id="increment">+</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <button class="buy-now">Buy Now</button>
+            <div class="icon-with-text">
+                <div><i class="fa-solid fa-truck-moving"></i><span>Free worldwide shipping on all orders over
+                        $100</span></div>
+                <div><i class="fa-regular fa-calendar-days"></i><span>Delivers in: 3-7 Working Days Shipping &
+                        Return</span></div>
+            </div>
+        </div>
+    </div>
+    <!-- Description -->
+
+    <div class="des-heading">
+        <span class="heading">Description</span>
+        <span class="divider">|</span>
+        <span class="reviews">Reviews</span>
+
+        <div class="description">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex
+                ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+            <ul class="description-points">
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua.</li>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat.
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua.</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="similar-products">
+
+        <h2>Similar Prouducts</h2>
+        <div class="products">
+            <div class="product1">
+                <img src="listingimg/p3.png" alt="">
+                <h2>The Best Headphones</h2>
+                <h3 class="price">$200.00</h3>
+            </div>
+            <div class="product1">
+                <img src="listingimg/p4.png" alt="">
+                <h2>The Best Headphones</h2>
+                <h3 class="price">$200.00</h3>
+            </div>
+            <div class="product1">
+                <img src="listingimg/p5.png" alt="">
+                <h2>The Best Headphones</h2>
+                <h3 class="price">$200.00</h3>
+            </div>
+            <div class="product1">
+                <img src="listingimg/p3.png" alt="">
+                <h2>The Best Headphones</h2>
+                <h3 class="price">$200.00</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="button.js"></script>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Include the header.html content
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+
+</html>

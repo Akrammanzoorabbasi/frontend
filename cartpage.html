@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+    <!-- Header -->
+
+
+    <div id="header-placeholder"></div>
+
+    <script>
+        // Include the header.html content
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+    </script>
+
+    <div class="container">
+        <div class="cart-section">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="remove-btn">&times;</span></td>
+                        <td>
+                            <div class="product-info">
+                                <img src="/listingimg/Rectangle 54.png" alt="Banana" class="product-img">
+                                <p class="product-description">This is a longer text that should be truncated with an
+                                    ellipsis</p>
+                            </div>
+                        </td>
+                        <td>$10.00</td>
+                        <td>
+                            <div class="button-group">
+                                <div class="quantity-selector">
+                                    <button class="decrement">-</button>
+                                    <span class="quantity">1</span>
+                                    <button class="increment">+</button>
+                                </div>
+                            </div>
+                        </td>
+                        <td>$10.00</td>
+                    </tr>
+                    <tr>
+                        <td><span class="remove-btn">&times;</span></td>
+                        <td>
+                            <div class="product-info">
+                                <img src="/listingimg/Rectangle 54.png" alt="Banana" class="product-img">
+                                <p class="product-description">This is a longer text that should be truncated with an
+                                    ellipsis</p>
+                            </div>
+                        </td>
+                        <td>$10.00</td>
+                        <td>
+                            <div class="button-group">
+                                <div class="quantity-selector">
+                                    <button class="decrement">-</button>
+                                    <span class="quantity">1</span>
+                                    <button class="increment">+</button>
+                                </div>
+                            </div>
+                        <td>$10.00</td>
+                    </tr>
+                    <tr>
+                        <td><span class="remove-btn">&times;</span></td>
+                        <td>
+                            <div class="product-info">
+                                <img src="/listingimg/Rectangle 54.png" alt="Banana" class="product-img">
+                                <p class="product-description">This is a longer text that should be truncated with an
+                                    ellipsis</p>
+                            </div>
+                        </td>
+                        <td>$10.00</td>
+                        <td>
+                            <div class="button-group">
+                                <div class="quantity-selector">
+                                    <button class="decrement">-</button>
+                                    <span class="quantity">1</span>
+                                    <button class="increment">+</button>
+                                </div>
+                            </div>
+                        </td>
+                        <td>$10.00</td>
+                    </tr>
+                    <tr>
+                        <td><span class="remove-btn">&times;</span></td>
+                        <td>
+                            <div class="product-info">
+                                <img src="/listingimg/Rectangle 54.png" alt="Banana" class="product-img">
+                                <p class="product-description">This is a longer text that should be truncated with an
+                                    ellipsis</p>
+                            </div>
+                        </td>
+                        <td>$10.00</td>
+                        <td>
+                            <div class="button-group">
+                                <div class="quantity-selector">
+                                    <button class="decrement">-</button>
+                                    <span class="quantity">1</span>
+                                    <button class="increment">+</button>
+                                </div>
+                            </div>
+                        </td>
+                        <td>$10.00</td>
+                    </tr>
+                    <tr>
+                        <td><span class="remove-btn">&times;</span></td>
+                        <td>
+                            <div class="product-info">
+                                <img src="/listingimg/Rectangle 54.png" alt="Banana" class="product-img">
+                                <p class="product-description">This is a longer text that should be truncated with an
+                                    ellipsis</p>
+                            </div>
+                        </td>
+                        <td>$10.00</td>
+                        <td>
+                            <div class="button-group">
+                                <div class="quantity-selector">
+                                    <button class="decrement">-</button>
+                                    <span class="quantity">1</span>
+                                    <button class="increment">+</button>
+                                </div>
+                            </div>
+                        </td>
+                        <td>$10.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="cart-total">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cart Total</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>Subtotal</td>
+                    <td class="total">$10.00</td>
+                </tr>
+                <tr>
+                    <td>Discount</td>
+                    <td class="total">$0.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td class="total">$10.00</td>
+                </tr>
+            </table>
+            <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+        </div>
+    </div>
+
+
+    <script>
+        // cart button
+        document.querySelectorAll('.increment').forEach(function (button) {
+            button.addEventListener('click', function () {
+                let quantityElement = this.previousElementSibling;
+                let quantity = parseInt(quantityElement.textContent);
+                quantity++;
+                quantityElement.textContent = quantity;
+            });
+        });
+
+        document.querySelectorAll('.decrement').forEach(function (button) {
+            button.addEventListener('click', function () {
+                let quantityElement = this.nextElementSibling;
+                let quantity = parseInt(quantityElement.textContent);
+                if (quantity > 1) {
+                    quantity--;
+                    quantityElement.textContent = quantity;
+                }
+            });
+        });
+    </script>
+
+
+
+<div id="footer-placeholder"></div>
+
+    <script>
+        // Include the header.html content
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+
+</html>

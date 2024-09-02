@@ -1,0 +1,267 @@
+.product-page {
+    display: flex;
+    margin: 30px;
+}
+
+.left-section,
+.right-section {
+    flex-basis: 50%; /* Each section takes up 50% of the width */
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included within the width */
+}
+
+.left-section {
+    display: flex;
+    gap: 20px; /* Space between small boxes and large box */
+}
+
+.small-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100px;
+    /* padding: 20px; */
+}
+
+.small-box {
+    height: 135px;    
+    background-size: cover;
+    border: 1px solid gray;
+    padding: 4px;
+    border-radius: 5px;
+}
+.large-box{
+    border: 1px solid gray;
+    width: 430px;
+    height: 455px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.large-box img{
+    flex-grow: 1;
+    width: 380px;
+    height: 450px;
+    padding: 0;
+    position: relative;
+    bottom: 0px;
+    left: 20px;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-header {
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+.product-header h1 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.price-stars {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-family: sans-serif;
+}
+
+.price-stars .price {
+    font-size: 25px;
+    font-weight: bold;
+    color: #005C84;
+}
+
+.price-stars .divider {
+    margin: 0 10px;
+    color: #2c2c2c;
+    font-size: 20px;
+}
+
+.price-stars .stars {
+    color: #FDA02F; /* Gold color for stars */
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.price-stars .reviews {
+    font-size: 14px;
+    color: #464646;
+    font-weight: bold;
+}
+
+.price-stars .heart-icon {
+    font-size: 29px;
+    color: red;
+    margin-left: auto; /* Push the heart icon to the right */
+}
+
+.price-divider {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 2px 0 10px 0px;
+}
+
+.right-section p{
+    font-family: sans-serif;
+    line-height: 28px;
+    width: 500px;
+}
+.right-section ul{
+    font-family: sans-serif;
+    line-height: 28px;
+}
+/* Styles for the button group */
+.button-group {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between the quantity selector and Add to Cart button */
+    margin-bottom: 20px;
+    width: 460px;
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #005C84;
+    border-radius: 50px;
+    overflow: hidden;
+    /* background-color: #f8f8f8; */
+    width: 150px;
+    height: 40px;
+}
+
+.quantity-selector button {
+    background-color: white;
+    border: none;
+    font-size: 20px;
+    width: 40px;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#quantity {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.add-to-cart {
+    width: 100%;
+    height: 100%;
+    background-color: #005C84;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.right-section .buy-now {
+    width: 460px;
+    padding: 12px;
+    background-color: white;
+    color: #282828;
+    border: 1px solid #005C84;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.icon-with-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* color: wheat; */
+    font-family: sans-serif;
+}
+
+.icon-with-text i {
+    margin-right: 20px;
+}
+
+.icon-with-text div {
+    display: flex;
+    align-items: start;
+}
+
+
+.des-heading{
+    margin: 50px;
+    width: 85%;
+}
+
+.des-heading .heading, .reviews, .divider{
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.des-heading .reviews{
+    margin-left: 15px;
+    color: grey;
+    font-weight: lighter;
+    font-size: 24px;
+}
+
+.des-heading .description{
+    font-family: sans-serif;
+    font-weight: lighter;
+    line-height: 32px;
+}
+
+
+.similar-products{
+    width: 100%;
+}
+
+.similar-products h2{
+    font-family: sans-serif;
+    font-size: 30px;
+    margin-left: 50px;
+    font-weight: bolder;
+}
+.products{
+    display: flex;
+    margin: 50px;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.product1 img{
+    width: 280px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.product1 h2, h3{
+    font-family: sans-serif;
+}
+
+.product1 h2{
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 13px;
+    margin-bottom: 5px;
+    margin-left: 0;
+}
+
+.product1 .price{
+    margin-top: 2px;
+    font-weight: bolder;
+    color: #005C84;
+}

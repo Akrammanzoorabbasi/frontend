@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="checkoutpage.css">
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+
+    <script>
+        // Include the header.html content
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+    </script>
+
+    <div class="container">
+        <div class="section-container left">
+            <div style="display: flex;" class="upside-text">
+                <div>Personal</div>
+                <div>Billing</div>
+                <div>Confirmation</div>
+            </div>
+            <div class="card">
+
+
+                <div class="input-group">
+                    <label for="street-address">Name On Card*</label>
+                    <input type="text" id="street-address" placeholder="Name On Card" required>
+                </div>
+                <div class="input-group">
+                    <label for="town-city">Card Number*</label>
+                    <input type="text" id="town-city" placeholder="Card Number" required>
+                </div>
+                <div class="last-input-page2">
+                    <div class="input-group">
+                        <label for="country">Valid Through*</label>
+                        <input type="text" id="country" placeholder="Valid Through" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="postcode-zip">CVV*</label>
+                        <input type="number" id="postcode-zip" placeholder="CVV" required>
+                    </div>
+                </div>
+                <div><input type="checkbox">Save as default payment method</div>
+
+                <button class="button" style="margin-top: 35px;">Proceed to Next Step</button>
+            </div>
+        </div>
+        <div class="section-container right">
+            <div style="display: flex;" class="upside-text2">
+                <div>Cart Details</div>
+
+            </div>
+            <div class="card">
+                <table class="cart-details">
+                    <thead>
+                        <tr class="header-row">
+                            <th>PRODUCT</th>
+                            <th>Quantity</th>
+                            <th>SUBTOTAL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Double Bed & Dressing</td>
+                            <td>01</td>
+                            <td style="color: #005C84;">$180</td>
+                        </tr>
+                        <tr>
+                            <td>Double Bed & Dressing</td>
+                            <td>01</td>
+                            <td style="color: #005C84;">$120</td>
+                        </tr>
+                        <tr class="border-bottom">
+                            <td>Double Bed & Dressing</td>
+                            <td>01</td>
+                            <td style="color: #005C84;">$100</td>
+                        </tr>
+                        <tr class="border-bottom subtotal-row">
+                            <td colspan="2">SUBTOTAL</td>
+                            <td style="color: #005C84;">$400</td>
+                        </tr>
+                        <tr class="border-bottom shipping-row">
+                            <td colspan="2">SHIPPING</td>
+                            <td style="color: #005C84;">$100</td>
+                        </tr>
+                        <tr class="total-row">
+                            <td colspan="2">Total</td>
+                            <td style="color: #005C84;">$500</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Include the header.html content
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+
+
+</body>
+
+</html>

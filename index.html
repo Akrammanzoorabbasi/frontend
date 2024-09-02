@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="navbar">
+            <div class="navbar-icon-container">
+                <img src="/png/nav.png" alt="Navbar Icon" class="icon navbar-icon">
+            </div>
+            <span class="navbar-text">Digital Products</span>
+            <nav class="menu">
+                <a href="#home">Home</a>
+                <a href="#shop">Shop</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="search-container">
+                <img src="/png/search.png" alt="Search Icon" class="search-icon">
+                <input type="text" class="search-input" placeholder="Search">
+                <img src="/png/list.png" alt="Action List Icon" class="action-icon">
+            </div>
+            <img src="/png/account.png" alt="Account Icon" class="icon account-icon">
+            <a href="./signup.html" class="sign-link">Signup</a>
+            <a href="./login.html" class="sign-link">Signin</a>
+            <img src="/png/cart.png" alt="Cart Icon" class="icon cart-icon">
+
+
+        </div>
+    </header>
+
+    <!-- slider -->
+
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide" style="background-image: url('/slider/watches.png');">
+                <div class="first">
+                    <h3 class="line1">Best Deal Online on smart watches</h3>
+                    <h1 class="line2">SMART WEARABLE</h1>
+                    <h3 class="line3">UP to 80% OFF</h3>
+                    <button class="shop line4">Shop now</button>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('/slider/laptops.png'); background-color: #019494;">
+                <div class="first">
+                    <h3 class="line1">Best Deal Online on laptop</h3>
+                    <h1 class="line2">LAPTOP</h1>
+                    <h3 class="line3">UP to 80% OFF</h3>
+                    <button class="shop line4">Shop now</button>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('/slider/tablets.png'); background-color: #442121;">
+                <div class="first">
+                    <h3 class="line1">Best Deal Online on tablet</h3>
+                    <h1 class="line2">TABLET</h1>
+                    <h3 class="line3">UP to 80% OFF</h3>
+                    <button class="shop line4">Shop now</button>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url(/slider/headphones.png);">
+                <div class="first">
+                    <h3 class="line1">Best Deal Online on Headphone</h3>
+                    <h1 class="line2">Wireless Headphones</h1>
+                    <h3 class="line3">UP to 80% OFF</h3>
+                    <button class="shop line4">Shop now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-button">
+        <div class="pre">&lt;</div>
+        <div class="next">&gt;</div>
+    </div>
+    <!-- Divider -->
+    <div class="divider">
+        <span>Top Sellers</span>
+    </div>
+
+    <!-- Products Grid -->
+
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="/slider/head.png" alt="Product 1">
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <h3 class="product-header">The 4 Best Bluetooth Wireless Headphones of 2024</h3>
+            <p class="price">$29.99</p>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <img src="/slider/screen.png" alt="Product 2">
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <h3 class="product-header">The 4 Best Bluetooth Wireless Headphones of 2024</h3>
+            <p class="price">$39.99</p>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <img src="/slider/watch.png" alt="Product 3">
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <h3 class="product-header">The 4 Best Bluetooth Wireless Headphones of 2024</h3>
+            <p class="price">$49.99</p>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <img src="/slider/lap.png" alt="Product 4">
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <h3 class="product-header">The 4 Best Bluetooth Wireless Headphones of 2024</h3>
+            <p class="price">$59.99</p>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+        </div>
+    </div>
+
+
+    <!-- Two columns -->
+
+    <div class="two-column">
+        <div class="column left">
+            <img src="/slider/Rectangle 57.png" alt="Description of Image">
+        </div>
+        <div class="column right">
+            <div class="content">
+                <h2>Apple Watch Ultra 2 - 3 Pack</h2>
+                <button class="cta-button">Shop Now</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Products Slider -->
+    
+    <div class="main-container">
+        <!-- Left Column -->
+        <div class="left-section">
+            <h2>Shop By Categories</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <button class="shop-button">Shop Now → </button>
+        </div>
+
+        <!-- Right Column with Slider -->
+        <div class="right-section">
+            <div class="slider-wrapper">
+                <div class="image-slider">
+                    <div class="image-slide">
+                        <img src="slider/11.png" alt="Product 1">
+                        <h3 class="img-header">The 4 Best Bluetooth Wireless Headphones of 2024</h3>
+                         <p class="price-img">$49.99</p>
+                        <div class="star-rating">★★★★★</div>
+                    </div>
+                    <div class="image-slide">
+                        <img src="slider/22.png" alt="Product 2">
+                        <h3 class="img-header">The 4 Best Bluetooth Wireless Headphones of 2024</h3>
+                         <p class="price-img">$49.99</p>
+                        <div class="star-rating">★★★★★</div>
+                    </div>
+                    <div class="image-slide">
+                        <img src="slider/33.png" alt="Product 3">
+                        <h3 class="img-header">The 4 Best Bluetooth Wireless Headphones of 2024</h3>
+                         <p class="price-img">$49.99</p>
+                        <div class="star-rating">★★★★★</div>
+                    </div>
+                    <div class="image-slide">
+                        <img src="slider/44.png" alt="Product 4">
+                        <h3 class="img-header">The 4 Best Bluetooth Wireless Headphones of 2024</h3>
+                         <p class="price-img">$49.99</p>
+                        <div class="star-rating">★★★★★</div>
+                    </div>
+                    <div class="image-slide">
+                        <img src="slider/55.png" alt="Product 5">
+                        <h3 class="img-header">The 4 Best Bluetooth Wireless Headphones of 2024</h3>
+                         <p class="price-img">$49.99</p>
+                        <div class="star-rating">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Divider -->
+    <div class="divider">
+        <span>Top Electronic Brands</span>
+    </div>
+
+    <!-- Top Brands -->
+
+    <div class="unique-slider-container">
+        <div class="unique-slider">
+            <!-- Columns -->
+            <div class="unique-column">
+                <div class="unique-image-container" style="background-image: url('brand/bg1.png');"></div>
+                <h3>Up to 80% off</h3>
+            </div>
+            <div class="unique-column">
+                <div class="unique-image-container" style="background-image: url('brand/bg2.png');"></div>
+                <h3>Up to 80% off</h3>
+            </div>
+            <div class="unique-column">
+                <div class="unique-image-container" style="background-image: url('brand/bg3.png');"></div>
+                <h3>Up to 80% off</h3>
+            </div>
+            <div class="unique-column">
+                <div class="unique-image-container" style="background-image: url('brand/bg4.png');"></div>
+                <h3>Up to 80% off</h3>
+            </div>
+            <div class="unique-column">
+                <div class="unique-image-container" style="background-image: url('brand/bg5.png');"></div>
+                <h3>Up to 80% off</h3>
+            </div>
+            <div class="unique-column">
+                <div class="unique-image-container" style="background-image: url('brand/bg6.png');"></div>
+                <h3>Up to 80% off</h3>
+            </div>
+            <div class="unique-column">
+                <div class="unique-image-container" style="background-image: url('brand/bg7.png');"></div>
+                <h3>Up to 80% off</h3>
+            </div>
+            <div class="unique-column">
+                <div class="unique-image-container" style="background-image: url('brand/bg8.png');"></div>
+                <h3>Up to 80% off</h3>
+            </div>
+            <div class="unique-column">
+                <div class="unique-image-container" style="background-image: url('brand/bg9.png');"></div>
+                <h3>Up to 80% off</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Circles for Navigation -->
+    <div class="unique-nav-dots">
+        <div class="unique-dot active" onclick="moveUniqueSlider(0)"></div>
+        <div class="unique-dot" onclick="moveUniqueSlider(1)"></div>
+        <div class="unique-dot" onclick="moveUniqueSlider(2)"></div>
+    </div>
+
+
+    <!-- Custom Div -->
+
+    <div class="custom-div">
+        <h1 class="custom-heading1">NEW COLLECTIONS</h1>
+        <h1 class="custom-heading2">Headphones Listen With Heart</h1>
+        <button class="custom-button">Shop Now</button>
+    </div>
+
+
+    <!-- Divider -->
+
+
+    <div class="divider brand">
+        <span>Our Brand</span>
+    </div>
+
+    <!-- OUR BRAND -->
+
+
+    <div class="company-row">
+        <div class="company-name" style="background-image: url(/brand/panasonic.png);"></div>
+        <div class="company-name" style="background-image: url(/brand/sony.png);"></div>
+        <div class="company-name" style="background-image: url(/brand/asus.png);"></div>
+        <div class="company-name" style="background-image: url(/brand/samsung.png);"></div>
+        <div class="company-name" style="background-image: url(/brand/sanyo.png);"></div>
+        <div class="company-name" style="background-image: url(/brand/oppo.png);"></div>
+    </div>
+
+    <!-- off div -->
+    <div class="search-cont">
+        <h2 class="search-heading">Sign Up For Newsletter & Get 20% Off</h2>
+        <div class="search-bar-container">
+            <input type="text" class="search-bar" placeholder="Your Email Address">
+            <button class="subscribe-button">Subscribe</button>
+        </div>
+    </div>
+
+
+    <!-- icons -->
+
+    <div class="columns-container">
+        <div class="column">
+            <div class="icon-with-headings">
+                <img src="/png/1.png" alt="Icon 1" class="icon-img1">
+                <div class="headings">
+                    <h3 class="heading1">Free Delivery</h3>
+                    <h4 class="heading2">Free shipping on all order</h4>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="icon-with-headings">
+                <img src="/png/2.png" alt="Icon 2" class="icon-img">
+                <div class="headings">
+                    <h3 class="heading1">Returns</h3>
+                    <h4 class="heading2">Back guarantee under 7 days</h4>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="icon-with-headings">
+                <img src="/png/3.png" alt="Icon 3" class="icon-img">
+                <div class="headings">
+                    <h3 class="heading1">Support 24/7</h3>
+                    <h4 class="heading2">Free shipping on all order</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- First Column -->
+            <div class="footer-column">
+                <h3 class="footer-heading1">Digital Products</h3>
+                <p class="footer-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, whe</p>
+                <h4 class="footer-subheading">Download App</h4>
+                <div class="footer-buttons">
+                    <button class="footer-button btn1"></button>
+                    <button class="footer-button btn2"></button>
+                </div>
+            </div>
+
+            <!-- Second Column -->
+            <div class="footer-column">
+                <h3 class="footer-heading">Most Popular Categories</h3>
+                <hr class="footer-hr">
+                <ul class="footer-links">
+                    <li><a href="#">Headphone</a></li>
+                    <li><a href="#">Watch</a></li>
+                    <li><a href="#">Laptop</a></li>
+                    <li><a href="#">Tablet</a></li>
+                </ul>
+            </div>
+
+            <!-- Third Column -->
+            <div class="footer-column">
+                <h3 class="footer-heading">Customer Service</h3>
+                <hr class="footer-hr2">
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <hr class="footer-bottom-hr">
+        <p class="footer-bottom-text">© 2024 All right reserved.digital product.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

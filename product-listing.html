@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <link rel="stylesheet" href="product-styling.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <script>
+        // Include the header.html content
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+    </script>
+
+
+    <!-- Headphones Section -->
+     <div class="main-div">
+    <h1 class="main-heading">Headphones</h1>
+    <div class="product-list">
+        <div class="product-item">
+            <img src="/listingimg/png2.png" alt="Product Image">
+            <h2>AirPods</h2>
+        </div>
+        <div class="product-item">
+            <img src="/listingimg/png1.png" alt="Product Image">
+            <h2>Gaming Headsets</h2>
+        </div>
+        <div class="product-item">
+            <img src="/listingimg/png3.png" alt="Product Image">
+            <h2>Kids' Headphones</h2>
+        </div>
+        <div class="product-item">
+            <img src="/listingimg/png4.png" alt="Product Image">
+            <h2>Wireless Earbuds</h2>
+        </div>
+    </div>
+
+    <!-- Left Side Panel -->
+    <div class="left-panel">
+        <h2>Customer Reviews</h2>
+        <div class="rating">
+            <div class="stars"><span>★★★★☆</span> & Up</div>
+            <div class="stars"><span>★★★☆☆</span> & Up</div>
+            <div class="stars"><span>★★☆☆☆</span> & Up</div>
+            <div class="stars"><span>★☆☆☆☆</span> & Up</div>
+        </div>
+
+        <h2>Brands</h2>
+        <label><input type="checkbox"> Sony</label>
+        <label><input type="checkbox"> Asus</label>
+        <label><input type="checkbox"> Samsung</label>
+        <label><input type="checkbox"> Sanyo</label>
+        <label><input type="checkbox"> Oppo</label>
+
+        <h2>Price</h2>
+        <div class="price-range">
+            <p>Under $25</p>
+            <p>$25 to $50</p>
+            <p>$50 to $100</p>
+            <p>$100 to $200</p>
+            <p>$200 & above</p>
+        </div>
+
+        <div class="price-buttons">
+            <button>$ Min</button>
+            <button>$ Max</button>
+            <button>Go</button>
+        </div>
+
+        <h2>Deals and Discounts</h2>
+        <h3>All Discounts</h3>
+
+        <h2>Colors</h2>
+        <label><input type="checkbox"> Black</label>
+        <label><input type="checkbox"> Multicolor</label>
+        <label><input type="checkbox"> Pink</label>
+        <label><input type="checkbox"> Purple</label>
+        <label><input type="checkbox"> White</label>
+    </div>
+
+    <!-- Right Side Product Display -->
+    <div class="right-panel">
+        <h2>Showing 1-12 of 24 item(s)</h2>
+        <p class="short-des">Here are some of our top products for you to choose from.</p>
+
+        <div class="products">
+            <!-- Product Cards -->
+            <div class="product-card">
+                <img src="/listingimg/p.png" alt="Product">
+                <h3>The Best Headphones</h3>
+                <p>$29.99</p>
+            </div>
+            <div class="product-card">
+                <img src="/listingimg/p1.png" alt="Product">
+                <h3>The Best Headphones</h3>
+                <p>$49.99</p>
+            </div>
+            <div class="product-card">
+                <img src="/listingimg/p2.png" alt="Product">
+                <h3>The Best Headphones</h3>
+                <p>$99.99</p>
+            </div>
+            <div class="product-card">
+                <img src="/listingimg/p3.png" alt="Product">
+                <h3>The Best Headphones</h3>
+                <p>$29.99</p>
+            </div>
+            <div class="product-card">
+                <img src="/listingimg/p4.png" alt="Product">
+                <h3>The Best Headphones</h3>
+                <p>$49.99</p>
+            </div>
+            <div class="product-card">
+                <img src="/listingimg/p5.png" alt="Product">
+                <h3>The Best Headphones</h3>
+                <p>$99.99</p>
+            </div>
+            <div class="product-card">
+                <img src="/listingimg/p.png" alt="Product">
+                <h3>The Best Headphones</h3>
+                <p>$29.99</p>
+            </div>
+            <div class="product-card">
+                <img src="/listingimg/p1.png" alt="Product">
+                <h3>The Best Headphones</h3>
+                <p>$49.99</p>
+            </div>
+            <div class="product-card">
+                <img src="/listingimg/p2.png" alt="Product">
+                <h3>The Best Headphones</h3>
+                <p>$99.99</p>
+            </div>
+            <div class="product-card">
+                <img src="/listingimg/p3.png" alt="Product">
+                <h3>The Best Headphones</h3>
+                <p>$29.99</p>
+            </div>
+            <div class="product-card">
+                <img src="/listingimg/p4.png" alt="Product">
+                <h3>The Best Headphones</h3>
+                <p>$49.99</p>
+            </div>
+            <div class="product-card">
+                <img src="/listingimg/p5.png" alt="Product">
+                <h3>The Best Headphones</h3>
+                <p>$99.99</p>
+            </div>
+            <!-- Repeat for more products -->
+        </div>
+
+        <h2 class="center-heading">Showing 1-12 of 24 item(s)</h2>
+        <hr>
+        <button>Load More ></button>
+    </div>
+</div>
+
+<div id="footer-placeholder"></div>
+
+    <script>
+        // Include the header.html content
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+
+
+
+</body>
+</html>

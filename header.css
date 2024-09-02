@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Header */
+.header {
+    background-color: #005C84;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 70px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.navbar-icon-container {
+    background-color: #F3F9FB;
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .icon {
+    width: 24px;
+    height: 24px;
+}
+
+.navbar-icon {
+    width: 10px;
+    height: 10px;
+}
+
+.navbar-text {
+    font-size: 28px;
+    margin-right: 25px;
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #F3F9FB;
+    border-radius: 10px;
+    padding: 5px;
+    margin-right: 25px;
+    height: 35px;
+    width: 260px;
+}
+
+.search-container .search-icon,
+.search-container .action-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    background-color: #F3F9FB;
+    color: #005C84;
+    width: 200px;
+    margin: 0 5px;
+}
+
+.search-input::placeholder {
+    color: #005C84;
+}
+
+.account-icon,
+.cart-icon {
+    margin-left: 20px;
+}
+
+.sign-link {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+.sign-link:hover {
+    text-decoration: underline;
+}
